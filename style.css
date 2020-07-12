@@ -1,0 +1,18 @@
+* {
+  font-size: 24px;
+  margin-top: 25px;
+  line-height: 3em;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  width: 25%;
+  border: 2px solid white;
+}
