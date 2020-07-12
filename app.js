@@ -92,7 +92,7 @@ function movieTitle(e) {
     let userTitle = document.querySelector('.userTitle').value;
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', `http://www.omdbapi.com/?t=${userTitle}&apikey=d096177b`, true);
+    xhr.open('GET', `https://www.omdbapi.com/?t=${userTitle}&apikey=d096177b`, true);
     xhr.onload = function(){
       if(this.status === 200) {
         const response = JSON.parse(this.responseText);
