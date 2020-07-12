@@ -119,6 +119,7 @@ function movieTitle(e) {
 }
 
 window.onload = function(){
+  console.log('hey');
   document.querySelector('.test').addEventListener('click', movieTitle);
   getFromLS();
   document.querySelector('.table').addEventListener('click', removeRow);
