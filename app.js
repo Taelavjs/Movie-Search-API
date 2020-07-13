@@ -70,15 +70,14 @@ function addRow(title, releaseYear, rating){
   var td1 = document.createElement("td");
   var td2 = document.createElement("td");
   var td3 = document.createElement("td");
-  var td4 = document.createElement("a")
+  var td4 = document.createElement("td")
   var row = document.createElement("tr");
   
   td1.innerHTML = title;
   td2.innerHTML = releaseYear;
   td3.innerHTML = rating;
   td4.className = 'delete-item';
-  td4.href = '#';
-  td4.innerHTML = 'X';
+  td4.innerHTML = 'X'
   console.log(td4);
   row.appendChild(td1);
   row.appendChild(td2);
@@ -92,7 +91,7 @@ function movieTitle(e) {
     let userTitle = document.querySelector('.userTitle').value;
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', `https://www.omdbapi.com/?t=${userTitle}&apikey=d096177b`, true);
+    xhr.open('GET', `http://www.omdbapi.com/?t=${userTitle}&apikey=d096177b`, true);
     xhr.onload = function(){
       if(this.status === 200) {
         const response = JSON.parse(this.responseText);
@@ -119,7 +118,6 @@ function movieTitle(e) {
 }
 
 window.onload = function(){
-  console.log('hey');
   document.querySelector('.test').addEventListener('click', movieTitle);
   getFromLS();
   document.querySelector('.table').addEventListener('click', removeRow);
