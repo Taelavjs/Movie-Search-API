@@ -1,2 +1,2 @@
 # TeriffecT.github.io
-Practice Project
+Practice Project involving API and LS
