@@ -99,7 +99,6 @@ function movieTitle(e) {
             releaseYear = response.Year,
             rating = response.imdbRating;
         let key = 'movie';
-        // console.log(title, releaseYear, rating);
         if(title === undefined || releaseYear === undefined || rating === undefined){
           alert(`${userTitle} is not a film`);
         } else {
