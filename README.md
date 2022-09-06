@@ -1,2 +1,2 @@
-# TeriffecT.github.io
+Movie Selecting
 Practice Project involving API and LS
